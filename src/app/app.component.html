@@ -1,0 +1,15 @@
+<md-toolbar color="warn">
+  <span>angular2 calculator demo</span>
+  <div class="app-toolbar-filler"></div>
+
+  <!-- Only show Login button if user is not Authenticated -->
+  <button md-button [routerLink]="['/login']">LOGIN</button>
+
+  <!-- Only show Calculator button if user is Authenticated -->
+  <button md-button [routerLink]="['/calculator']">CALCULATOR</button>
+
+  <!-- Only show Logout button if user is Authenticated -->
+  <button md-button (click)="logout()">LOGOUT</button>
+</md-toolbar>
+
+<router-outlet></router-outlet>

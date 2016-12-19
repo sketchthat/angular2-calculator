@@ -1,0 +1,15 @@
+<!-- Only show when user is NOT authenticated -->
+<md-card>
+  <md-card-subtitle>Login</md-card-subtitle>
+  <md-card-content>
+    <button md-raised-button (click)="loginWithGoogle()">LOGIN WITH GOOGLE</button>
+  </md-card-content>
+</md-card>
+
+<!-- Only show when user is authenticated -->
+<md-card>
+  <md-card-subtitle>Welcome</md-card-subtitle>
+  <md-card-content>
+    <button md-raised-button [routerLink]="['/calculator']">CALCULATOR</button>
+  </md-card-content>
+</md-card>

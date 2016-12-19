@@ -1,0 +1,41 @@
+<md-card>
+  <md-card-content>
+      <div class="calculatorScreen">{{ calculatorScreen }}</div>
+  </md-card-content>
+</md-card>
+<md-card>
+  <md-card-content>
+    <p>
+      <button md-raised-button (click)="pressNumber(1)">1</button>
+      <button md-raised-button (click)="pressNumber(2)">2</button>
+      <button md-raised-button (click)="pressNumber(3)">3</button>
+      <button md-raised-button (click)="pressSign('+')">+</button>
+    </p>
+    <p>
+      <button md-raised-button (click)="pressNumber(4)">4</button>
+      <button md-raised-button (click)="pressNumber(5)">5</button>
+      <button md-raised-button (click)="pressNumber(6)">6</button>
+      <button md-raised-button (click)="pressSign('-')">-</button>
+    </p>
+    <p>
+      <button md-raised-button (click)="pressNumber(7)">7</button>
+      <button md-raised-button (click)="pressNumber(8)">8</button>
+      <button md-raised-button (click)="pressNumber(9)">9</button>
+      <button md-raised-button (click)="pressSign('*')">*</button>
+    </p>
+    <p>
+      <button md-raised-button (click)="pressNumber(0)">0</button>
+      <button md-raised-button (click)="pressEquals()">=</button>
+    </p>
+  </md-card-content>
+</md-card>
+
+<md-card>
+  <md-card-subtitle>Previous Calculations</md-card-subtitle>
+  <md-card-content>
+    <!-- Show Previous Calculations -->
+    <md-list>
+      <md-list-item>Show Previous Calculations</md-list-item>
+    </md-list>
+  </md-card-content>
+</md-card>
